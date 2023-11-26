@@ -7,25 +7,28 @@
   <title>Rebrandly</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <div class="container">
     <nav>
       <div class="navigation-first-section">
         <div class="logo">
           <img src="https://rebrandly.com/images/URL-Shortener.fileextension.svg" alt="logo">
         </div>
-        <div class="nav-items ">
+        <div class="nav-items">
           <li> <a href="#">Features</a></li>
           <li> <a href="#">Features</a></li>
           <li> <a href="#">Features</a></li>
           <li> <a href="#">Features</a></li>
           <li> <a href="#">Features</a></li>
           <li> <a href="#">Features</a></li>
+
           <div class="nav-mobile">
-            <button>login</button>
+            <button>Login</button>
             <button>Sign Up</button>
             <button>Book Demo</button>
           </div>
@@ -36,28 +39,33 @@
         <li> <a href="#">Features</a></li>
         <button>Book a Demo</button>
       </div>
-      <div class="hamburger">
+
+     <div class="hamburger">
         <div></div>
         <div></div>
         <div></div>
-      </div>
+     </div>
     </nav>
 
+    <script src="app.js"></script>
   </div>
-  <script src="./app.js"></script>
 
   <div class="gradient-background">
     <div class="container col-xxl-12 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center">
-          <div class="col-10 col-sm-8 col-lg-6">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center">
+          <div class="img_holder col-10 col-sm-8 col-lg-6">
             <img src="./images/brand-urls-shorten-urls-sm.png" class="d-block mx-lg-auto img-fluid" alt="hero-phones-new" width="700" height="500" loading="lazy">
           </div>
         
-          <div class="col-lg-6">
-            <div class="text-block-v-5 w-hidden-main w-hidden-medium">Create branded <br> and safe short URLs
-              <span class="trademark-text-2 trademark-text-2-small-small small w-hidden-main"> ® </span>
+          <div class="col-lg-6 d-flex flex-column align-items-center text_wrapper">
+            <div class="text-block-v-5 w-hidden-main w-hidden-medium">
+              <div class="d-flex justify-content-center">
+                Create branded <br> and safe short URLs
+                <span class="trademark-text-2 trademark-text-2-medium trademark-text-2-small-small small w-hidden-main"> ® </span>
+              </div>
             </div>
-            <p class="p-lg-2">Rebrandly is the fastest, easiest way to brand, track, and share short URLs using a custom domain name.</p>
+            
+            <p class="p-lg-2 text-center">Rebrandly is the fastest, easiest way to brand, track, and share short URLs using a custom domain name.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="cct9pmt">Sign up</button>
               
@@ -67,6 +75,7 @@
         </div>
     </div>
   </div>
+
   <div class="shorten-section">
     <div class="container hero">
       <div class="rebrand-link">
@@ -111,8 +120,16 @@
       </div>
     </div>
   </div>
-<br>
-  <div class="blue-banner-wrapper">
+
+  <div>
+    <div class="learn_more">
+      <a href="#3rd_section">
+        <p>Learn more</p>
+        <img src="images/arrow-down.svg" alt="icon"></a>
+    </div>
+  </div>
+
+  <div id="3rd_section" class="blue-banner-wrapper">
     <div class="container_blue_banner">
       <h2 class="blue-banner-heading">
         <strong class="blue-banner-heading-1">
@@ -159,7 +176,6 @@
     </div>
   </div>
 
-  
 </body>
 
 </html>
