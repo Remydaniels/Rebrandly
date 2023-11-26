@@ -1,52 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>Rebrandly</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebrandly</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="container">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="material-icons">menu</i>
-      </label>
-      <img class="logo mt-3" src="https://rebrandly.com/images/URL-Shortener.fileextension.svg" alt="Logo" height="44px" width="130">
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Domains</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Enterprise</a></li>
-        <li><a href="#">Developers</a></li>
-        <li><a href="#">Marketplace</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Sign up</a></li>
-      </ul>
+  <div class="container">
+    <nav>
+      <div class="navigation-first-section">
+        <div class="logo">
+          <img src="https://rebrandly.com/images/URL-Shortener.fileextension.svg" alt="logo">
+        </div>
+        <div class="nav-items ">
+          <li> <a href="#">Features</a></li>
+          <li> <a href="#">Features</a></li>
+          <li> <a href="#">Features</a></li>
+          <li> <a href="#">Features</a></li>
+          <li> <a href="#">Features</a></li>
+          <li> <a href="#">Features</a></li>
+          <div class="nav-mobile">
+            <button>login</button>
+            <button>Sign Up</button>
+            <button>Book Demo</button>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-second-section">
+        <li> <a href="#">Features</a></li>
+        <li> <a href="#">Features</a></li>
+        <button>Book Demo</button>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
 
-    <div class="gradient-background">
-      <div class="container col-xxl-12 py-5">
-          <div class="row flex-lg-row-reverse align-items-center">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img src="./images/brand-urls-shorten-urls-sm.png" class="d-block mx-lg-auto img-fluid" alt="brand" width="550" height="450" loading="lazy">
+  </div>
+  <script src="./app.js"></script>
+
+  <div class="gradient-background">
+    <div class="container col-xxl-12 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./images/brand-urls-shorten-urls-sm.png" class="d-block mx-lg-auto img-fluid" alt="hero-phones-new" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <div class="text-block-v-5 w-hidden-main w-hidden-medium">Create branded <br> and safe short URLs
+              <span class="trademark-text-2 trademark-text-2-small-small small w-hidden-main"> ® </span>
             </div>
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Create branded
-                and safe short URLs</h1>
-              <p class="lead">Rebrandly is the fastest, easiest way to brand, track, and share short URLs using a custom domain name.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="cct9pmt">Sign up free</button>
-                
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4 me-md-2" fdprocessedid="08tzbb">book a demo</button>
-              </div>
+            <p class="p-lg-2">Rebrandly is the fastest, easiest way to brand, track, and share short URLs using a custom domain name.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="cct9pmt">Sign up</button>
+              
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4 me-md-2" fdprocessedid="08tzbb">Book a demo</button></a>
             </div>
           </div>
+        </div>
+    </div>
+  </div>
+  <div class="shorten-section">
+    <div class="container hero">
+      <div class="rebrand-link">
+        <div class="rebrand-link-card">
+          <div class="short-link">
+            <form class="row d-grid gap-2 d-md-flex justify-content-md-start">
+            <div class="col-sm-9">
+              <label for="inputPassword2" class="visually-hidden">Make your links shorter</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Make your links shorter  " fdprocessedid="uacgvh" control-id="ControlID-2">
+            </div>
+            <div class="col-auto btn_form">
+              <button type="submit" class="btn btn-primary mb-3" fdprocessedid="33ctt3" control-id="ControlID-3">Confirm identity</button>
+            </div>
+            </form>
+            <div class="rebrand-link-limit-reached-banner-container undefined">
+              <div class="rebrand-link-limit-reached-banner-copy">
+                <img class="rebrand-link-limit-reached-banner-ill" src="https://rebrandly.com/images/ill-upgrade.svg" width="72" height="72" alt="upgrade">
+                <div class="titles">
+                  <h3 class="w-hidden-medium w-hidden-main">Get the most from your links</h3>
+                  <p class="p-lg-3">Rebrandly is the fastest, easiest way to brand, track, and share short URLs using a custom domain name.</p>
+                </div>
+              </div>
+              <div class="rebrand-link-limit-reached-banner-cta">
+                <a class="A A--sm" href="https://oauth.rebrandly.com/connect/authorize?client_id=1FEB3DDD-8AC7-4F83-A2B3-ED4EB558DFA2&amp;redirect_uri=https%3A%2F%2Fapp.rebrandly.com&amp;state=eyJwYXRoIjoiL3NldHVwIiwic2VhcmNoIjoiP3A9Zmlyc3Rsb2dpbiJ9&amp;response_type=code&amp;scope=rbapi%20offline_access%20rbapikeys%20rbinvites%20rbdowngrade&amp;acr_values=register%20cmd%3Adirect%20flow%3Auser%20plan%3A16f08fb9749d417eb142a326a2d0527c" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" fdprocessedid="08tzbb">Sign up free</button>
+                </a>
+              </div>
+            </div>
+            <div class="terms-copy">By clicking Shorten URL, you agree to Rebrandly’s 
+              <a class="terms " href="terms-conditions" target="_blank" rel="noopener noreferrer">Terms of Use</a> , 
+              <a class="terms" href="privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and 
+              <a class="terms" href="cookies" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+<br>
+  <div class="blue-banner-wrapper">
+    <div class="container_blue_banner">
+      <h2 class="blue-banner-heading">
+        <strong class="blue-banner-heading-1">
+          The complete platform to brand and manage links
+        </strong>
+      </h2>
+      <div class="horizontal-alignment home">
+        <div class="div-block">
+          <div>
+            <h3 class="h4_white_left">Brand</h3>
+            <h4 class="mixed-h4 home">Enhance brand visibility and trust by putting your brand name on every link you share</h4>
+          </div>
+          <div>
+            <h3 class="h4_white_left">Collaborate</h3>
+            <h4 class="mixed-h4 home">Share branded short links across departments, regions and teams with one cohesive strategy</h4>
+          </div>
+          <div>
+            <h3 class="h4_white_left">Integrate</h3>
+            <h4 class="mixed-h4 home">Incorporate branded links into your existing processes, workflow and tools with ease</h4>
+          </div>
+        </div>
+        <div class="platform-img"><img src="./images/hero-home-2.png" alt="URL shortener" class="banner-image">
+        </div>
+        <div class="div-block">
+          <div>
+            <h3 class="h4_white_right">Track</h3>
+            <h4 class="mixed-h4 home left-align">Understand social media, email marketing, ads and SEO through detailed click stats</h4>
+          </div>
+          <div>
+            <h3 class="h4_white_right">Optimize</h3>
+            <h4 class="mixed-h4 home left-align">Growth and Target your audience with our link shortener</h4>
+          </div>
+          <div>
+            <h3 class="h4_white_right">Scale</h3>
+            <h4 class="mixed-h4 home left-align">Increase usage with an infrastructure that can grow at the same rate as your business</h4>
+          </div>
+        </div>
+      </div>
+      <div class="btn_block">
+        <a class="btn--sm" href="features" rel="noopener noreferrer">
+          <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2" fdprocessedid="08tzbb">Discover all features</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
 </body>
+
 </html>
