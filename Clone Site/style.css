@@ -468,3 +468,60 @@ nav{
         max-width: none;  
    }
 }
+
+.testimonials {
+    background: #fff;
+    background: url(https://rebrandly.com/static/shape-v-2-808de312dfd45d88dff8005e8cc15847.png);
+    background-position: 0 100%;
+    background-position-x: -130px;
+    background-repeat: no-repeat;
+    background-size: 756px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.container.testi_wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.vertical_flow {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.testimonials_header {
+    color: #212732;
+    display: block;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 46px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.p-lg-4 {
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.cross-fade-column {
+    animation: cross-fade-5 15sec 0  12sec;
+}
+
+.CrossFadeLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    position: relative;
+    width: 90%;
+}
