@@ -7,8 +7,7 @@ hamburger.addEventListener('click', () => {
 
 const accordion = document.getElementsByClassName ('AccordionItem__trigger')
 
-for (i = 0; i<accordion.length; i++ ){
-    accordion[i].addEventListener('click', function(){
-        this.classList.toggle('active')
-    })
-}
+
+accordion.addEventListener('click', () => {
+    this.classList.toggle('active')
+})

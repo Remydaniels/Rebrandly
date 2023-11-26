@@ -77,8 +77,8 @@ a:hover{
 }
 
 .hamburger div{
-    height: 4px;
-    background: #000;
+    height: 3px;
+    background: var(--blue);
     border-radius: 10px;
 }
 
