@@ -704,6 +704,7 @@ nav{
 
 .billion h3 {
     font-size: 35px;
+    font-weight: 500;
 }
 
 .billion p {
@@ -744,9 +745,10 @@ nav{
 }
 
 @media screen and (min-width: 1281px) {
-
-=======
-    width: 90%;
+    .rating_container {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 .integrations {
