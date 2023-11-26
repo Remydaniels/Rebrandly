@@ -442,6 +442,15 @@ nav{
     .text_wrapper {
         width: 85%;
     }
+
+    .vertical_flow {
+        margin-bottom: 50px;
+    }
+
+    .container.testi_wrapper {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+    }
 }
 
 /* For Smaller Screens */
