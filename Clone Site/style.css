@@ -718,7 +718,6 @@ nav{
     width: 100%;
     border-radius: 4px;
     background-color: inherit;
-
     margin-top: 60px;
     padding: 8px 35px;
 }
@@ -789,7 +788,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
     max-width: 1250px;
-    max-width: var(--container-max-width);
+    max-width: 100%;
 }
 
 .p-b-36 {
@@ -834,159 +833,132 @@ h2 {
     margin-top: 12px;
 }
 
-.HomeFAQ .Accordion {
+.HomeFAQ .accordion {
     padding: 24px;
 }
 
-.Accordion {
+.accordion {
     width: 100%;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border-color: unset;
+    --bs-accordion-btn-icon-width: 15px;
 }
 
-.HomeFAQ .AccordionItem {
+
+.HomeFAQ .accordion-Item {
     background-color: var(--blue);
-    border-bottom: 1px solid white;
     border-radius: 0;
 }
 
-.AccordionItem {
+.accordion-Item {
     background-color: var(--blue);
-    border-radius: 8px;
+    border-radius: 0;
+    border: #2C96DF;
     padding: 24px;
 }
 
-.AccordionItem__trigger {
+.HomeFAQ, .accordion-button {
+    color: white;
+}
+
+.accordion-button {
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: -.1px;
+    background-color: #2C96DF;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    box-shadow: none;
+    background-color: var(--blue);
+}
+
+.accordion-Item:last-child .accordion-button.collapsed,
+.accordion-Item:last-child .accordion-body{
+    border-bottom: 1px solid white;
+}
+
+.accordion-header {
+   margin: 0;
+}
+
+
+.accordion-body {
+    font-size: small;
+    line-height: 1.4;
+    margin-bottom: 10px solid var(--blue);
+    margin-top: 0;
+    background-color: #2C96DF;
+    color: #fff;
+}
+
+code:not(:hover) {
+    color: #EBBB23;
+}
+
+code:not(:disabled) {
     cursor: pointer;
 }
 
+code {
+    letter-spacing: normal;
+}
+
+
+
+@media (max-width: 1023px) {
+    .Text--x-large {
+    font-size: 24px;
+    line-height: 1.42;
+}
+}
+
+@media only screen and (min-width: 48em) {
+    .display-sm-none {
+       display: none!important;
+}
+    .display-sm-flex {
+        display: flex!important;
+        border: #2C96DF;
+    }
+
+    .display-sm-block {
+        display: block!important;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .HomeFAQ__title {
+    justify-content: center;
+}
+}
+
+.display-none {
+    display: none;
+}
+
 .flex {
-    display: flex;
+    width: 100%;
 }
 
 .between-xs {
     justify-content: space-between;
 }
 
-.HomeFAQ .AccordionItem p {
-    color: white;
+.display-sm-flex {
+    display: none;
 }
 
-p.Text--small {
-    font-size:x-small;
+.HomeFAQ .Accordion_lg {
+    padding: 24px;
 }
-
-.AccordionItem__title {
-    color: gray;
-    font-weight: bold;
-}
-
-h6, p {
-    letter-spacing: -.1px;
-}
-
-p {
-    font-size: small;
-    line-height: 1.4;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.HomeFAQ h3 {
-    font-size: small;
-    font-weight: bold;
-    line-height: 21px;
-}
-.HomeFAQ h2, .HomeFAQ h3 {
-    color: white;
-}
-
-.HomeFAQ .AccordionItem__close {
-    fill: white;
-}
-
-.HomeFAQ .AccordionItem:hover p {
-    color: gray;
-}
-
-.AccordionItem--open .AccordionItem__close, .AccordionItem__close {
-    transition: -webkit-transform .2s ease-in-out;
-    transition: transform .2s ease-in-out;
-    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-}
-
-.AccordionItem--open .AccordionItem__close {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.icon-wrapper {
-    line-height: 0;
-}
-
-.icon-wrapper, .inline {
-    display: inline-block;
-}
-
-.icon-wrapper span {
-    display: inline-block;
-    line-height: 0;
-    pointer-events: none;
-}
-
-svg:not(:root) {
-    overflow: hidden;
-}
-.Icon--xsmall {
-    height: 16px;
-    width: 16px;
-}
-.v-middle {
-    vertical-align: middle;
-}
-
-.AccordionItem__content {
-    height: 0;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-}
-
-.AccordionItem__text {
-    color:gray;
-    letter-spacing: -.1px;
-    line-height: 1.33;
-    margin-top: 12px;
-}
-
-.HomeFAQ .A:not(:hover) {
-    color: yellow;
-}
-
-.A:not(:disabled) {
-    cursor: pointer;
-}
-
-.A {
-    letter-spacing: normal;
-}
-
-.A--lg {
-    font-size: .9375rem;
-    font-size: x-small;
+.Accordion_lg {
+    width: 100%;
 }
 
 .start-xs {
     justify-content: flex-start;
     text-align: start;
-}
-
-.display-none {
-    display: none
-}
-
-@media (min-width: 48em) {
-    .display-sm-none {
-    display: none;
- }
- .display-sm-flex {
-    display: flex;
-}
 }
