@@ -987,3 +987,116 @@ code {
     justify-content: flex-start;
     text-align: start;
 }
+
+.frequently {
+    width: 45%;
+}
+
+.footer {
+    background-color: #f9f9fa;
+    border-top: 1px solid #eef3f4;
+    padding-top: 60px;
+}
+
+.first_column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer_writing_wrapper {
+    width: 16%;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_writing_wrapper h6 {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+.footer_writing_wrapper p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.social {
+    padding-left: 22px;
+}
+
+.footer_logo_1 {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.apple_text {
+    border: solid 1px grey;
+    border-radius: 6px;
+    padding: 5px 6px;
+
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.apple_text span {
+    font-size: 18px;
+}
+
+.apple_text p {
+    line-height: 17px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .footer_writing_wrapper {
+        margin-bottom: 40px;
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer_writing_wrapper {
+        margin-bottom: 40px;
+        width: 49%;
+    }
+
+    .social {
+        padding-left: 35px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .footer_writing_wrapper {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .apple_text {
+        width: 40%;
+    }
+
+    .apple_text_dupli {
+        margin-top: 10px;
+    }
+
+    .footer_logo_1 {
+        justify-content: space-between;
+        width: 45%;
+    }
+
+    .social {
+        padding-left: 0px;
+    }
+}
