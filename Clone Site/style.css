@@ -174,6 +174,14 @@ nav{
     line-height: 72px;
 }
 
+.text-block-v-5 h1 {
+    width: 100%;
+    color: #212732;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 72px;
+}
+
 .shorten-section {
     background: hsl(209.14,31.53%,21.76%);
     padding-bottom: 10px;
@@ -378,7 +386,6 @@ nav{
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 5px;
-    text-transform: none;
 }
 
 .mixed-h4.left-align {
@@ -404,6 +411,16 @@ nav{
     padding-bottom: 40px;
 }
 
+@media screen and (min-width: 1288px) {
+    .text-block-v-5, .text-block-v-5_mini {
+        text-align: justify !important;
+    }
+
+    .text_wrapper {
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+}
 
 @media screen and (max-width: 1280px){
     .nav-items{
@@ -467,7 +484,11 @@ nav{
     .text-block-v-5 {
         display: block;
         text-align: center;
-        width: 100%;
+    
+    }
+
+    .text-block-v-5_mini {
+        text-align: center;
     }
 
     .rebrand-link-limit-reached-banner-container {
@@ -507,18 +528,22 @@ nav{
     .text-block-v-5 {
         display: none;
     }
+
     .Container--narrow, .Container--wide {
         margin-left: 16px;
         margin-right: 16px;
         max-width: calc(100% - 32px);
     }
+
     .HomeFAQ__title {
         justify-content: center;
     }
+
     p {
         font-size: 18px;
         line-height: 1.22;
     }
+
     h2, h3, h4 {
         line-height: 28px;
     }
