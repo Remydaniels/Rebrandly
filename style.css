@@ -408,7 +408,7 @@ nav{
     margin: 0;
 }
 
-.learn_more p:active {
+.learn_more a:hover {
     color: black;
 }
 
