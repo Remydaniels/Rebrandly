@@ -398,6 +398,11 @@ nav{
     text-align: center;
 }
 
+.learn_more a {
+    display: flex;
+    flex-direction: column;
+}
+
 .learn_more p {
     font-size: 21px;
     margin: 0;
@@ -992,10 +997,22 @@ code {
     width: 45%;
 }
 
+@media screen and (max-width: 760px) {
+    .frequently {
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
 .footer {
     background-color: #f9f9fa;
     border-top: 1px solid #eef3f4;
     padding-top: 60px;
+}
+
+.footer_container {
+    max-width: 80%;
+    margin: auto;
 }
 
 .first_column {
@@ -1003,6 +1020,21 @@ code {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+}
+
+.second_column h6 {
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.second_actual_column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.second_actual_column p:hover {
+    color: var(--blue);
 }
 
 .footer_writing_wrapper {
@@ -1030,8 +1062,12 @@ h6 {
     font-weight: 400;
 }
 
+.footer_writing_wrapper p:hover {
+    color: var(--blue);
+}
+
 .social {
-    padding-left: 22px;
+    padding-left: 13px;
 }
 
 .footer_logo_1 {
@@ -1049,6 +1085,19 @@ h6 {
     width: 100%;
 }
 
+.apple_text:hover {
+    background-color: grey;
+    color: white;
+}
+
+.apple_text p:hover {
+    color: inherit;
+}
+
+svg:hover {
+    fill: #f9f9fa;
+}
+
 .apple_text span {
     font-size: 18px;
 }
@@ -1059,10 +1108,40 @@ h6 {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1592px) {
+    .footer_container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
     .footer_writing_wrapper {
         margin-bottom: 40px;
         width: 33%;
+    }
+
+    .second_column h6 {
+        padding-left: 0px;
+    }
+
+    .footer_container {
+        padding-right: 60px;
+        padding-left: 10px;
+    }
+
+    .apple_text {
+        width: 75%;
+    }
+
+    .social {
+        padding-left: 0px;
+    }
+
+    .footer_logo_1 {
+        align-items: center;
+        justify-content: left;
+        gap: 50px !important;
+        width: 70%;
     }
 }
 
@@ -1072,8 +1151,8 @@ h6 {
         width: 49%;
     }
 
-    .social {
-        padding-left: 35px;
+    .apple_text {
+        width: 170px;
     }
 }
 
@@ -1084,7 +1163,7 @@ h6 {
     }
 
     .apple_text {
-        width: 40%;
+        width: 180px;
     }
 
     .apple_text_dupli {
