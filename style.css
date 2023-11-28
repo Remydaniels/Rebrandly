@@ -408,7 +408,7 @@ nav{
     margin: 0;
 }
 
-.learn_more p:active {
+.learn_more a:hover {
     color: black;
 }
 
@@ -1088,6 +1088,7 @@ h6 {
 .apple_text:hover {
     background-color: grey;
     color: white;
+    transition: all .2s ease-in-out;
 }
 
 .apple_text p:hover {
