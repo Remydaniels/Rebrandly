@@ -86,14 +86,19 @@ li{
     list-style: none;
 }
 
+.fixed-top {
+    background-color: white;
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0px auto;
     align-items: center;
     padding-top: 30px;
+    margin-bottom: auto;
 }
+
 
 .navigation-first-section{
     display: flex;
@@ -112,10 +117,34 @@ nav{
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 10px;
+    margin-right: 60px;
 }
 
+
+.sign_up_btn{
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background: transparent;
+    padding: 4px 8px;
+}
+
+.sign_up_btn:hover{
+    background: var(--blue);
+    color: white;
+}
+
+.sign_up_btn2 {
+    background:#2281C2;
+    color: white;
+}
+
+.sign_up_btn2:hover {
+    border: 1px solid var(--blue);
+    color: white;
+    background: var(--blue);
+}
 
 .navigation-second-section> button:nth-child(3){
     border: 1px solid var(--blue);
@@ -134,7 +163,9 @@ nav{
 }
 
 /* media query css */
-
+.pad {
+    padding-top: 5rem;
+}
 
 .trademark-text-2-medium {
     top: 80px;
@@ -451,7 +482,8 @@ nav{
     }
 
     .nav-mobile{
-        display: block;
+        display: flex;
+        gap: 20px;
     }
     
     .hamburger{
@@ -577,7 +609,10 @@ nav{
     max-width: calc(100% - 40px);
    }
 
-   
+   .logo {
+    padding-left: 110px;
+    margin-right: 20px;
+}
 }
 
 .testimonials {
@@ -1178,6 +1213,20 @@ svg:hover {
     .social {
         padding-left: 0px;
     }
+
+    .nav-mobile {
+        display: grid;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .accordion-button::after {
