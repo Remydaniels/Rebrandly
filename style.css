@@ -1057,7 +1057,7 @@ code {
 }
 
 .footer_container {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -1155,8 +1155,11 @@ svg:hover {
 }
 
 
-@media screen and (max-width: 1592px) {
-
+@media screen and (min-width: 767px) {
+    .footer_container {
+        max-width: 83%;
+    }
+}
 
 @media screen and (max-width: 1080px) {
     .footer_writing_wrapper {
