@@ -1328,7 +1328,7 @@ svg:hover {
 }
 
 .btn-5 {
-    color: blue;
+    color: var(--blue);
     background: white;
     border-radius: 2px;
 }
