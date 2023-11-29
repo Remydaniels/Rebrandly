@@ -381,6 +381,11 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     width: 800px;
+    gap: 10px;
+}
+
+.div-block_two {
+    gap: 20px;
 }
 
 .h4_white_left {
@@ -411,7 +416,7 @@ nav{
 }
 
 .banner-image {
-    width: 650px;
+    width: 1800px;
     height: 399px;
     padding-top: 35px;
 }
@@ -439,7 +444,7 @@ nav{
 }
 
 .learn_more p {
-    font-size: 1.3125rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -1298,6 +1303,7 @@ svg:hover {
     margin-bottom: 24px;
     text-align: center;
     width: 100%;
+    line-height: 35px;
    }
 }
 
@@ -1306,12 +1312,23 @@ svg:hover {
     font-size: 24px;
     line-height: 32px;
     width: 100%;
-} 
 }
 
-.btn-5{
-    color: var(--blue);
+}
+
+@media screen and (max-width: 698px) {
+    .btn-5 {
+        padding: 7px 4px !important;
+        width: 160px;
+        font-size: 14px;
+        font-weight: 500;
+    }    
+}
+
+.btn-5 {
+    color: blue;
     background: white;
+    border-radius: 2px;
 }
 
 .btn-5:hover{
