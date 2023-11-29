@@ -162,6 +162,10 @@ nav{
     display: none;
 }
 
+.fixed-top {
+    padding: 30px 40px;
+}
+
 /* media query css */
 .pad {
     padding-top: 5rem;
@@ -435,7 +439,7 @@ nav{
 }
 
 .learn_more p {
-    font-size: 21px;
+    font-size: 1.3125rem;
     margin: 0;
 }
 
@@ -616,8 +620,8 @@ nav{
 }
 
 .testimonials {
-    background: #fff;
-    background: url(https://rebrandly.com/static/shape-v-2-808de312dfd45d88dff8005e8cc15847.png);
+    background-color: rgb(246, 246, 247);
+    
     background-position: 0 100%;
     background-position-x: -130px;
     background-repeat: no-repeat;
@@ -939,7 +943,7 @@ h2 {
 }
 
 .accordion-Item:last-child .accordion-button.collapsed,
-.accordion-Item:last-child .accordion-body{
+.accordion-Item:last-child .accordion-{
     border-bottom: 1px solid white;
 }
 
@@ -1313,4 +1317,44 @@ svg:hover {
 .btn-5:hover{
     background: #e6e8ea;
     color: var(--blue);
+}
+
+.sub_footer {
+    background-color: #595d66;
+    color: #fff;
+    padding: 30px 0px;
+    position: relative;
+    top: 70px;
+}
+
+.sub_footer_container {
+    flex-wrap: wrap;
+    gap: 21px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.sub_footer h6 {
+    font-size: 15px;
+}
+
+.sub_footer_container h6:hover {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+@media screen and (max-width: 1135px) {
+    .sub_footer_container {
+        max-width: 97%;
+    }
+}
+@media screen and (max-width: 682px) {
+    .sub_footer_container {
+        flex-direction: column;
+    }
+
+    .sub_footer_container div {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
 }
