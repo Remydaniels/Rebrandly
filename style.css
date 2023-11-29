@@ -1156,10 +1156,7 @@ svg:hover {
 
 
 @media screen and (max-width: 1592px) {
-    .footer_container {
-        max-width: 83%;
-    }
-}
+
 
 @media screen and (max-width: 1080px) {
     .footer_writing_wrapper {
