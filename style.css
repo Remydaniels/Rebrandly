@@ -162,6 +162,10 @@ nav{
     display: none;
 }
 
+.fixed-top {
+    padding: 30px 40px;
+}
+
 /* media query css */
 .pad {
     padding-top: 5rem;
@@ -377,6 +381,11 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     width: 800px;
+    gap: 10px;
+}
+
+.div-block_two {
+    gap: 20px;
 }
 
 .h4_white_left {
@@ -407,7 +416,7 @@ nav{
 }
 
 .banner-image {
-    width: 650px;
+    width: 1800px;
     height: 399px;
     padding-top: 35px;
 }
@@ -435,7 +444,7 @@ nav{
 }
 
 .learn_more p {
-    font-size: 21px;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -616,8 +625,8 @@ nav{
 }
 
 .testimonials {
-    background: #fff;
-    background: url(https://rebrandly.com/static/shape-v-2-808de312dfd45d88dff8005e8cc15847.png);
+    background-color: rgb(246, 246, 247);
+    
     background-position: 0 100%;
     background-position-x: -130px;
     background-repeat: no-repeat;
@@ -939,7 +948,7 @@ h2 {
 }
 
 .accordion-Item:last-child .accordion-button.collapsed,
-.accordion-Item:last-child .accordion-body{
+.accordion-Item:last-child .accordion-{
     border-bottom: 1px solid white;
 }
 
@@ -1294,6 +1303,7 @@ svg:hover {
     margin-bottom: 24px;
     text-align: center;
     width: 100%;
+    line-height: 35px;
    }
 }
 
@@ -1302,15 +1312,66 @@ svg:hover {
     font-size: 24px;
     line-height: 32px;
     width: 100%;
-} 
 }
 
-.btn-5{
-    color: var(--blue);
+}
+
+@media screen and (max-width: 698px) {
+    .btn-5 {
+        padding: 7px 4px !important;
+        width: 160px;
+        font-size: 14px;
+        font-weight: 500;
+    }    
+}
+
+.btn-5 {
+    color: blue;
     background: white;
+    border-radius: 2px;
 }
 
 .btn-5:hover{
     background: #e6e8ea;
     color: var(--blue);
+}
+
+.sub_footer {
+    background-color: #595d66;
+    color: #fff;
+    padding: 30px 0px;
+    position: relative;
+    top: 70px;
+}
+
+.sub_footer_container {
+    flex-wrap: wrap;
+    gap: 21px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.sub_footer h6 {
+    font-size: 15px;
+}
+
+.sub_footer_container h6:hover {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+@media screen and (max-width: 1135px) {
+    .sub_footer_container {
+        max-width: 97%;
+    }
+}
+@media screen and (max-width: 682px) {
+    .sub_footer_container {
+        flex-direction: column;
+    }
+
+    .sub_footer_container div {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
 }
